@@ -30,4 +30,4 @@ Command Line Interface, 콘솔 형태의 프로그램
 
 
 ## 프로그램 시연
-![시연 영상](https://github.com/user-attachments/assets/687cb84b-8de0-45aa-b14e-ab00bd094ea7)
+![시연 영상](https://github.com/user-attachments/assets/97b21004-8be0-4b03-9383-cc272f39f6de)
