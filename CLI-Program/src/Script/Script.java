@@ -27,7 +27,7 @@ public class Script {
         while (true) {
             try {
                 tmp = sc.nextInt();
-                if (tmp < 1 && tmp > num) {
+                if (tmp < 1 || tmp > num) {
                     throw new InputMismatchException();
                 }
                 System.out.println();

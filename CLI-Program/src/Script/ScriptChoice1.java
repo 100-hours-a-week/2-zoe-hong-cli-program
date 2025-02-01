@@ -12,9 +12,9 @@ public class ScriptChoice1 extends Script {
 
     private final String[] choiceScript = new String[] {
             "\t✦ 버스는 미어터지고 길거리는 춥습니다.",
-            "\t  걸어갈까요, 버스를 탈까요?\n",
+            "\t  걸어갈까요, 대중교통을 이용할까요?\n",
             "\t  1. 걸어간다.",
-            "\t  2. 대중교통을 탄다.",
+            "\t  2. 대중교통을 이용한다.",
     };
 
     private final String[] walking = new String[] {
