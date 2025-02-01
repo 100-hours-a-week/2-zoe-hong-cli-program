@@ -13,15 +13,13 @@ public class Main {
         Taxi taxi = new Taxi(4, 5100, "경기65바8065");
 
         ScriptOpening so = new ScriptOpening();
-        ScriptChoice1 sc1 = new ScriptChoice1();
-        ScriptChoice2 sc2 = new ScriptChoice2();
-        ScriptBus sb = new ScriptBus();
         ScriptEnding se = new ScriptEnding();
 
         // 오프닝 문구 출력
         so.typingOpening();
 
         // 1.걸어갈 것인가, 2.대중교통을 탈 것인가?
+        ScriptChoice1 sc1 = new ScriptChoice1();
         switch(sc1.inputWalkOrVehicle()) {
             case 1:
                 sc1.typingWalking();
@@ -29,8 +27,10 @@ public class Main {
                 break;
             case 2:
                 // 1.버스를 탈 것인가, 2.택시를 탈 것인가?
+                ScriptChoice2 sc2 = new ScriptChoice2();
                 switch (sc2.inputBusOrTaxi()) {
                     case 1:
+                        ScriptBus sb = new ScriptBus();
                         se.ending(sb.takeBus(bus));
                         break;
                     case 2:
