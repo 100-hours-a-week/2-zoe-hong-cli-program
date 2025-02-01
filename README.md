@@ -4,6 +4,7 @@ Command Line Interface, 콘솔 형태의 프로그램
 **주제 설정:** 판교역에서 카카오테크 부트캠프 OT 장소까지 어떻게 가지?<br/>
 **개발 환경:** MacOS, IntelliJ, JDK 21
 
+<br/>
 
 ## 클래스 다이어그램
 ![클래스 다이어그램](https://github.com/user-attachments/assets/f6797a77-64a8-4599-88bd-a5f08d03131d)
@@ -13,6 +14,7 @@ Command Line Interface, 콘솔 형태의 프로그램
 - Script 패키지
   - 스크립트를 시뮬레이션 순서에 따라 종류별로 나누어 클래스 생성
 
+<br/>
 
 ## 시뮬레이션 시나리오
 ````
@@ -28,6 +30,7 @@ Command Line Interface, 콘솔 형태의 프로그램
 [3] 엔딩 -> 소요 시간(분), 교통 요금(원) 출력
 ````
 
+<br/>
 
 ## 프로그램 시연
 ![시연 영상](https://github.com/user-attachments/assets/97b21004-8be0-4b03-9383-cc272f39f6de)
