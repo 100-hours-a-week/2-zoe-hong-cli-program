@@ -4,6 +4,11 @@ import Transportation.Taxi;
 import Transportation.Walk;
 
 public class Main {
+    private final static int WALK = 1;
+    private final static int VEHICLE = 2;
+    private final static int BUS = 1;
+    private final static int TAXI = 2;
+
     public static void main(String[] args) {
         Walk walk = new Walk(16, 0);
         Bus[] bus = new Bus[3];
@@ -21,19 +26,19 @@ public class Main {
         // 1.걸어갈 것인가, 2.대중교통을 탈 것인가?
         ScriptChoice1 sc1 = new ScriptChoice1();
         switch(sc1.inputWalkOrVehicle()) {
-            case 1:
+            case WALK:
                 sc1.typingWalking();
                 se.ending(walk);
                 break;
-            case 2:
+            case VEHICLE:
                 // 1.버스를 탈 것인가, 2.택시를 탈 것인가?
                 ScriptChoice2 sc2 = new ScriptChoice2();
                 switch (sc2.inputBusOrTaxi()) {
-                    case 1:
+                    case BUS:
                         ScriptBus sb = new ScriptBus();
                         se.ending(sb.takeBus(bus));
                         break;
-                    case 2:
+                    case TAXI:
                         sc2.typingTaxi();
                         se.ending(taxi);
                         break;
